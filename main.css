@@ -1,0 +1,440 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+@keyframes myPhoto{
+
+    100%{
+        transform: translateY(15px);
+        background-color: #025951;
+    }
+
+}
+
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 80vh;
+    background-color: #034159;
+    color: white;
+}
+
+/* BARRA DE NAVEGAÇÃO DO HEADER*/
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #02595049;
+}
+
+nav h2{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    font-size: 20px;
+    margin-right: 600px;  
+}
+
+#portfolio-name-span{
+    font-size: 15px;
+    color: #0CF25D;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+nav a{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav a:hover{
+    color: #038C3E;
+}
+
+/* ---- TERMINA AQUI A BARRA DE NAVEGAÇÃO DO HEADER ---- */
+
+/* MINHAS INFORMAÇÕES NO HEADER */
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.container-header img{
+    height: 50vh;
+    border-radius: 500px;
+    border: 8px solid #0259508f;
+    animation: myPhoto 2s ease-in-out infinite alternate ;
+}
+
+.text-header{
+    align-self: center;
+    margin-right: 300px;
+}
+
+.text-header h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+}
+
+.text-header h1 span{
+    color: #0CF25D;
+}
+
+.text-header h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    filter: drop-shadow(0px 4px 0px #025951);
+}
+
+/* ---- TERMINA AQUI MINHAS INFORMAÇÕES NO HEADER ---- */
+/* ---- TERMINA AQUI O HEADER ---- */
+
+/* MAIN */
+
+/* ABA SOBRE MIM */
+
+#sobre-mim{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(to top, #025951, #034159);
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-mim img{
+    width: 50vh;
+    height: 50vh;
+    margin-left: 2%;
+    border-radius: 500px;
+    border: 8px solid #025950;
+    object-fit: cover;
+}
+
+.text-sobre-mim{
+    align-items: center;
+    color: white;
+    margin-left: 2%;
+}
+
+.text-sobre-mim h2{
+    font-family: 'Kaushan Script', cursive;
+    color: #0CF25D;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.text-sobre-mim P{
+    margin-left: 2vh;
+    
+}
+
+/* ABA PROJETOS */
+
+#meus-projetos{
+    width: 100%;
+    height: 280vh;
+    background: linear-gradient(to bottom, #025951, #034159);
+    color: white;
+}
+
+#meus-projetos h2{
+    font-family: 'Kaushan Script', cursive;
+    color: #0CF25D;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 60vh;
+    height: 70vh;
+    margin-top: 10vh;
+    background: linear-gradient(to top, #034159,#038C3E);
+    border: 2px solid #034159;
+    border-radius: 2vh;
+
+}
+
+.card h3{
+    color: #034159;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.card img{
+    border: 3px solid #0cf25d42;
+    border-radius: 2vh;
+    margin-top: 2vh;
+    margin-left: 10%;
+    width: 80%;
+    height: 43%;
+    object-fit: cover;
+}
+
+.text-projetos{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.text-projetos a{
+    text-decoration: none;
+    color:#0CF25D;
+    transition: .5s;
+}
+
+.text-projetos a:hover{
+    text-decoration: none;
+    color:#038C3E;
+}
+
+/* ABA MINHAS REDES */
+
+#minhas-redes{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #025951, #034159);
+    color: white;
+}
+
+#minhas-redes h2{
+    font-family: 'Kaushan Script', cursive;
+    color: #0CF25D;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40vh;
+}
+
+#git-hub{
+    width: 17vh;
+    transition: 1s;
+}
+
+#git-hub:hover{
+    width: 15vh;
+    cursor: pointer;
+    border: 3px solid #0CF25D;
+    border-radius: 12vh;
+}
+
+#linkedin{
+    width: 17vh;
+    transition: 1s;
+}
+
+#linkedin:hover{
+    width: 15vh;
+    cursor: pointer;
+    border: 3px solid #0CF25D;
+    border-radius: 12vh;
+}
+
+#email{
+    margin-top: 5vh;
+    width: 17vh;
+    transition: 1s;
+    border-radius: 1vh;
+}
+
+#email:hover{
+    width: 15vh;
+    cursor: pointer;
+    border: 3px solid #0CF25D;
+    border-radius: 12vh;
+}
+
+
+@media (min-width: 280px) and (max-width: 480px){
+
+    nav h2{
+        text-align: center;
+        margin-right: 0vh;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .container-header img{
+        display: none;
+    }
+
+    .text-header{
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #sobre-mim{
+        height: 115vh;
+        display: block;
+    }
+
+    #sobre-mim img{
+        width: 30vh;
+        height: 30vh;
+        margin-top: 8vh;
+        margin-left: 30%;
+        border-radius: 3vh;
+        border: 8px solid #025950;
+        object-fit: cover;
+    }
+
+    .text-sobre-mim{
+        margin-top: 6vh;
+        margin-right: 1vh;
+    }
+
+    #meus-projetos{
+        width: 100%;
+        height: 520vh;
+        background: linear-gradient(to bottom, #025951, #034159);
+        color: white;
+    }
+
+    #minhas-redes{
+        height: 150vh;
+        margin-top: 0vh;
+    }
+
+    .logos{
+        display: block;
+        margin-top: 10vh;
+
+    }
+
+    #git-hub, #linkedin, #email{
+        margin-top: 10vh;
+        margin-left: 40%;
+        display: block;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    nav h2{
+        text-align: center;
+        margin-right: 0vh;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .container-header img{
+        height: 30vh;
+    }
+
+    .text-header{
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #sobre-mim{
+        height: 115vh;
+        display: block;
+    }
+
+    #sobre-mim img{
+        width: 30vh;
+        height: 30vh;
+        margin-top: 8vh;
+        margin-left: 40%;
+        border-radius: 3vh;
+        border: 8px solid #025950;
+        object-fit: cover;
+    }
+
+    .text-sobre-mim{
+        margin-top: 6vh;
+        margin-right: 1vh;
+    }
+
+    #meus-projetos{
+        width: 100%;
+        height: 520vh;
+        background: linear-gradient(to bottom, #025951, #034159);
+        color: white;
+    }
+
+    #minhas-redes{
+        height: 150vh;
+        margin-top: 0vh;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    nav h2{
+        text-align: center;
+        margin-right: 0vh;
+    }
+
+    nav li{
+        padding-right: 1vh;
+    }
+
+    .container-header img{
+        height: 40vh;
+    }
+
+    .text-header{
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #sobre-mim img{
+        margin-left: 1vh;
+    }
+
+    #meus-projetos{
+        width: 100%;
+        height: 280vh;
+        background: linear-gradient(to bottom, #025951, #034159);
+        color: white;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+
+    nav h2{
+        text-align: center;
+        margin-right: 40vh;
+    }
+
+    .text-header{
+        text-align: center;
+        margin-right: 0px;
+    }
+
+}
